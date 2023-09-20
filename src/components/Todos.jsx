@@ -27,6 +27,7 @@ function Todos() {
             <button
               onClick={(e) => {
                 e.stopPropagation();
+                dispatch(dispatch(currentEditTodoID(null)))
                 dispatch(removeTodo(todo.id))
                 }}
               className="text-white bg-red-500 border-0 py-1 px-4 focus:outline-none hover:bg-red-600 rounded text-md"
