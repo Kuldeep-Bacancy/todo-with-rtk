@@ -16,7 +16,7 @@ function AddTodo() {
     e.preventDefault();
     dispatch(updateTodo({ id: editTodoID, text: input }))
     setInput('')
-    dispatch(dispatch(currentEditTodoID(null)))
+    dispatch(currentEditTodoID(null))
     
   }
 
